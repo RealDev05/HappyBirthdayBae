@@ -1,5 +1,5 @@
 import Image from "next/image";
-import IndexPage from "../common/ui/IndexPage2";
+import IndexPage from "../common/ui/IndexPage";
 
 export default function Home() {
   return (
