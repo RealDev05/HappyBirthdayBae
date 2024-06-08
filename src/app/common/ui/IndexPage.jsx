@@ -1,13 +1,15 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/navigation'
 
 export default function IndexPage() {
     let {push} = useRouter();
-    if(!sessionStorage.getItem("Answered")){
-        sessionStorage.setItem("Answered", false);
-    }
+    useEffect(()=>{
+        if(!sessionStorage.getItem("Answered")){
+            sessionStorage.setItem("Answered", false);
+        }
+    },[]);
     return (
         <div className="flex items-center justify-center min-h-screen bg-pink-200">
             <Head>
