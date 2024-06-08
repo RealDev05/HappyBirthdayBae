@@ -192,10 +192,12 @@ export default function Page() {
           Bae, you mean the world to me. Your smile lights up my life, and I
           cherish every moment we spend together. Thank you for being you, and
           for letting me be a part of your life. I hope your birthday is filled
-          with all the joy and love you deserve!
+          with all the joy and love you deserve! I couldn't make something grant
+          like I wanted to, but I took all my free time to make this for you.
+          Hope you like it.
         </p>
         <div className="mt-8 text-2xl md:text-4xl text-pink-600 font-bold max-w-[90%] md:max-w-[80%]">
-          Here are some of your pics 😁
+          Here's some of your pics 😁
         </div>
         <div className="mt-6 flex flex-wrap justify-center gap-4 w-[90%] md:w-[80%]">
           {images.map((image, index) => (
