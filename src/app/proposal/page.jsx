@@ -76,6 +76,9 @@ export default function Page() {
 
     const handleYesClick = () => {
         setSaidYes(true);
+        if(typeof window === 'undefined'){
+            return;
+        }
         sessionStorage.setItem("Answered", true);
         setTimeout(function () {
             alert("Hooray!! She said YES 🥰");
