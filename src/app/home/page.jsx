@@ -11,9 +11,6 @@ export default function Page() {
     const [isAnswered, setIsAnswered] = useState(null);
 
     useEffect(() => {
-        // if(typeof window === 'undefined'){
-        //     return;
-        // }
         setIsAnswered((sessionStorage.getItem("Answered") != undefined && sessionStorage.getItem("Answered")) === 'true');
     }, []);
 
