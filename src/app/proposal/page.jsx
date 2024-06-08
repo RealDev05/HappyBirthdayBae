@@ -79,7 +79,7 @@ export default function Page() {
         if(typeof window === 'undefined'){
             return;
         }
-        sessionStorage.setItem("Answered", true);
+        // sessionStorage.setItem("Answered", true);
         setTimeout(function () {
             alert("Hooray!! She said YES 🥰");
             push("/home");
