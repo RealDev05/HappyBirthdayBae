@@ -14,7 +14,7 @@ export default function Page() {
         if(typeof window === 'undefined'){
             return;
         }
-        // setIsAnswered((sessionStorage.getItem("Answered") != undefined && sessionStorage.getItem("Answered")) === 'true');
+        setIsAnswered((sessionStorage.getItem("Answered") != undefined && sessionStorage.getItem("Answered")) === 'true');
     }, []);
 
     const handleNotAnswered = () => {

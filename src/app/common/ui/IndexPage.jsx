@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation'
 export default function IndexPage() {
     let {push} = useRouter();
     useEffect(()=>{
-        // if(typeof window !== 'undefined' && !sessionStorage.getItem("Answered")){
-        //     sessionStorage.setItem("Answered", false);
-        // }
+        if(typeof window !== 'undefined' && !sessionStorage.getItem("Answered")){
+            sessionStorage.setItem("Answered", false);
+        }
     },[]);
     return (
         <div className="flex items-center justify-center min-h-screen bg-pink-200">
