@@ -164,7 +164,7 @@ export default function Page() {
       push("/");
     }, 8000);
     return (
-      <div className="flex items-center justify-center min-h-screen bg-pink-200 pt-5">
+      <div className="flex items-center justify-center min-h-screen font-['Poppins'] bg-pink-200 pt-5">
         <Head>
           <title>Happy Birthday!</title>
           <meta name="description" content="A special birthday surprise" />
@@ -179,7 +179,7 @@ export default function Page() {
   };
 
   return isAnswered ? (
-    <div className="flex items-center justify-center min-h-screen bg-pink-200 pt-5">
+    <div className="flex items-center justify-center font-['Poppins'] min-h-screen bg-pink-200 pt-5">
       <Head>
         <title>Happy Birthday!</title>
         <meta name="description" content="A special birthday surprise" />
