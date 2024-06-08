@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 export default function IndexPage() {
     let {push} = useRouter();
     useEffect(()=>{
-        if(!sessionStorage.getItem("Answered")){
+        if(typeof window !== 'undefined' && !sessionStorage.getItem("Answered")){
             sessionStorage.setItem("Answered", false);
         }
     },[]);
